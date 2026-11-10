@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    background-color: #BFB5B5;
+    display: flex;
+    justify-content: center;
+    /* align-content: center; */
+    font-family: "Genos", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: #141414;
+}

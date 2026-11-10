@@ -1,0 +1,6 @@
+<div id="calculator">
+    @if(toggleOn){ <app-display [isThisThingOn]=true [value]=numToDisplay></app-display>} 
+    @else{ <app-display [isThisThingOn]=false></app-display>}
+    <app-nav (clicked)="navClicked()"></app-nav>
+    <app-buttons (buttonDown)="buttonClicked($event)"></app-buttons>
+  </div>
