@@ -1,0 +1,25 @@
+@if(isOn){
+    <div>
+        @if(!isSubmitted){
+            <h1>Get a Quote</h1>
+        <p>Enter your info here: </p>
+        <form>
+            <input type="text" name="name" placeholder="Full Name" [(ngModel)]="nameQuote">
+            <input type="email" name="email" placeholder="Email Address" [(ngModel)]="emailQuote">
+            <textarea placeholder="Provide any details" name="text" [(ngModel)]="textQuote"></textarea>
+            <h2>Insurance Type</h2>
+            <section id = "radio">
+                <input class="quote"type="radio" name="type" value="Liability"><label for="Liability">Liability</label>
+                <input class="quote"type="radio" name="type" value="Property"><label for="Property">Property</label>
+            </section>
+        </form>
+        <button id="submit" (click)="submitQuote($event)">Submit</button>
+        <button id="close" (click)="closeQuote()">X</button>
+        }
+        @else {
+            <h1>Thank you!</h1>
+            <p>Thank you for reaching out, {{dataQuote.quoteName}}. 
+                We will contact you shortly at {{dataQuote.quoteEmail}}.</p>
+        }
+    </div>
+} 

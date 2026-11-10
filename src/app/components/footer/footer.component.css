@@ -1,0 +1,17 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* position: absolute; */
+    /* bottom: 0px; */
+    height: 15%;
+    border-top: 2px solid rgba(209, 209, 209, 0.2);
+    font-size: 10px;
+    box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.05);
+}
+.footer p {
+    margin: 5px 10px;
+    color:rgb(122, 122, 122);
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}

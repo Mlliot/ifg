@@ -1,0 +1,21 @@
+<!-- @if(!isAuth){
+    <button class="loginButton" (click)="login()">Login</button>
+}
+@else {
+    <a id="routerLink" routerLink="/user">Go to User Profile</a>
+    <button class="loginButton" (click)="logout()">Logout</button>
+} -->
+
+<div id = "logincontainer">
+
+
+<form [formGroup]="loginForm" (ngSubmit)="submit()">
+<label for="username">Username: </label>
+<input id="username" type="text" formControlName="username">
+<label for="password">Password: </label>
+<input id="password" type="text" formControlName="password">
+<p>{{loginForm.value.username}}</p>
+<button type="submit" [disabled]="!loginForm.valid">Submit</button>
+</form>
+
+</div>

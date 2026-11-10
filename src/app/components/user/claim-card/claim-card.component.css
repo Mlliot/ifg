@@ -1,0 +1,17 @@
+div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.096);
+    margin: 1px;
+}
+
+p {
+    padding: .5em;
+    margin: 0em;
+    width: 15%;
+}
+
+p:first-child {
+    width: 5%;
+}

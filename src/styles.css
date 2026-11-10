@@ -1,0 +1,413 @@
+a {
+    text-decoration: none;
+}
+
+button:hover, a:hover, #logo{
+    cursor: pointer;
+}
+
+#hero_text {
+    position: absolute;
+    top:30px;
+    left:30px;
+    text-align: left;
+    width: 45%;
+    color: white;
+    font-size: .9em;
+    max-width: 200px;;
+}
+
+#hero_text p {
+    margin: 5px 0;
+}
+
+#hero_text p:nth-child(3) {
+    font-size: .8em;
+}
+
+#list_wrap {
+    width: 90vw;
+    position: relative;
+}
+
+#list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 5%;
+    margin: 8px 0px;
+    overflow: scroll;
+
+}
+
+#list::-webkit-scrollbar {
+    display:none;
+}
+
+
+.list_item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* flex-wrap:nowrap; */
+    height: 5vw;
+    min-width: 130px;
+    /* max-width: 27vw; */
+    min-height: 25px;
+    /* max-height: 30px; */
+    font-size: .7em;
+    color: rgb(122, 122, 122);
+    border: 1px solid rgb(122, 122, 122, .3);
+    border-radius: 5px;
+    padding: 2px;
+    margin: 0px 5px;
+    box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.list_item p {
+    display:block;
+    margin: auto;
+}
+.carrot {
+    color: rgb(0, 153, 255);
+    font-size: 25px;
+}
+.icon {
+    height: auto;
+    max-height: 25px;
+    width: auto;
+    max-width: 25px;
+    /* object-fit:fill; */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+#hero {
+    height: 250px;
+    /* background-color: rgb(0, 153, 255); */
+    position:relative;
+    display: flex;
+    flex-direction: column;
+}
+
+#hero_img {
+    height: 85%;
+    /* background-image: url("./images/hands_banner.png"); */
+    background-position: 10% 100%;
+    background-size:cover;
+}
+
+#hero_nav{
+    background-color: white;
+    color: rgb(0, 153, 255);
+    font-size: 20px;
+   flex: 1;
+}
+
+#links {
+    padding: 10px;
+}
+
+.link {
+    display: inline-block;
+    padding: 5px 12px;
+    font-size: 1.1em;
+    color:rgb(0, 153, 255);
+}
+
+.link2 {
+    text-decoration: underline;
+    color: rgb(0, 153, 255);
+}
+
+#learn_more_button {
+    background-color: rgb(0, 153, 255);
+    width: 80px;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 8px;
+}
+
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+h4 {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+h4 + p{
+    margin: 0;
+}
+
+h4 + p + p {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.icon_b_wrap {
+    text-align: center;
+}
+
+
+/* business */
+
+#hero_img_business {
+    /* background-position: 100% 100%;
+    background-size: 50%; */
+
+    height: 85%;
+    /* background-image: url("./images/hands_banner.png"); */
+    background-position: 80% 0%;
+    background-size: 180%;
+}
+
+#container_business {
+    text-align: left;
+    padding: 0px 5%;
+    color: rgb(128, 128, 128);
+    font-size: .9em;
+}
+
+#insurance_container {
+    display: flex;
+    flex-direction: column;
+}
+
+#insurance_container .business_insurance {
+    display: flex;
+    flex-direction: row;
+    }
+
+.business_insurance {
+    margin: 3% 0;
+}
+
+.icon_b_wrap {
+    flex: 1;
+}
+
+.icon_b {
+    height: auto;
+    max-height: 50px;
+    width: auto;
+    max-width: 50px;
+    margin: 10px 0;
+}
+
+.insur {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+}
+
+.insur h4{
+    /* margin: 0px; */
+}
+
+.insur_child {
+    margin: 5px 10px;
+    min-width: 80px;
+}
+
+/* Claims*/
+
+#hero_nav_claim {
+    flex:1;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: center;
+}
+
+#selected {
+    font-weight: bold;
+    box-shadow: 0 2px;
+    /* box-shadow: 5px; */
+}
+
+.hero_nav_item {
+    color: rgb(0, 153, 255, .9);
+    font-size: .8em;
+    /* /* margin-top: 10px; */
+    padding: 2px 10px;
+    /* display: inline-block; */
+}
+
+
+#container_claims {
+    text-align: left;
+    padding: 0px 5%;
+    color: rgb(128, 128, 128);
+    font-size: .9em;
+}
+#container_claims p {
+    color: rgb(80, 80, 80);
+}
+#container_claims ul{
+    color: rgb(128, 128, 128);
+}
+
+#container_claims li {
+    margin: 10px;
+}
+
+#phone_num {
+    color:rgb(0, 153, 255);
+}
+/* Contact */
+
+#container_contact {
+    padding: 0 2px;
+}
+
+#contact_us {
+    text-align: left;
+    margin: 0 5%;
+    color:rgb(122, 122, 122);
+}
+
+
+#table_wrap {
+
+}
+
+table {
+    width: 90%;
+    margin: 0 5%;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05);
+    margin-bottom: 10%;
+    color:rgb(122, 122, 122);
+}
+
+th, td {
+    padding: 10px 10px;
+    /* margin: 0; */
+    text-align: left;
+}
+
+td {
+    font-size: .7em;
+}
+th {
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05);
+    font-size: .8em;
+}
+
+tr:nth-child(3), tr:nth-child(5) {
+    background-color: rgb(122, 122, 122, .08);
+}
+
+tr {
+    /* padding: 10px; */
+}
+
+@media screen and (min-width: 600px) {
+    /* .icon_b {
+        padding: 40%;
+    } */
+    .icon {
+        max-height: 100px;
+        max-width: 100px;
+    }
+    #list_wrap {
+        width: 100vw;
+        position: relative;
+    }
+    
+    #list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        /* overflow-x: scroll; */
+        /* overflow-y: hidden; */
+        padding: 8px 5%;
+        margin: 8px 0px;
+        overflow: hidden;
+    
+    }
+
+    #hero_nav {
+        font-size: 1.7em;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    #container_business {
+        padding-bottom: 20px;
+    }
+    #insurance_container {
+        flex-direction: row;
+    }
+    #hero {
+        height: 400px;
+    }
+    #hero_text {
+        width: 40%;
+        min-width: 310px;
+        max-width: 40%;
+        top: 5px;
+        left: 10%;
+    }
+    #hero_text h4{
+        font-size: 3em;
+    }
+    #hero_text p:nth-child(2){
+        font-size: 2.2em;
+    }
+    #hero_text p:nth-child(3){
+        font-size: 1.1em;
+    }
+    #list_wrap {
+        height: 120px;
+    }
+    #list {
+        height: 100%;
+    }
+    .list_item {
+        height: 45px;
+        /* width: 300px; */
+        max-width: 300px;
+        min-width: 200px;
+        margin-bottom: 60px;
+        font-size: .8em;
+    }
+    /* iframe {
+        top: 20%;
+        bottom;
+    } */
+     /* Claims */
+     #container_claims {
+        display: flex; 
+        flex-direction: row;
+        flex: 1 1 200px;
+        margin-bottom: 20px;
+        padding-top: 20px;
+     }
+     #container_claims #claim_tips {
+        flex: 0 1 60%;
+        padding: 0 20px;
+     }
+     #container_claims #submit_claim {
+        flex: 0 1 40%;
+     }
+     #container_contact {
+        padding: 0 20%;
+     }
+}

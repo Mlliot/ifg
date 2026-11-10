@@ -1,0 +1,126 @@
+#financial_img {
+    height: 100%;
+    width: 100%;
+}
+#financial_rating_wrap img {
+    height: 100%;
+    width: 100%;
+}
+#financial_rating_wrap {
+    background-color: white;
+    border-radius: 50px;
+    width: 20%;
+    height: 30%;
+    padding: 1px 4px;
+    margin-top: 1%;
+    max-width: 200px;
+    min-width: 120px;
+}
+
+
+#ambest {
+    font-size: .7em;
+}
+
+.rating_individual {
+    font-size: 12px;
+    margin: 0px;
+    letter-spacing: -.5px;
+}
+
+#banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 150px;
+    background-image: url("./buildingEdit.jpg");
+    background-position: 100% 31%;
+    padding: 15px 0px;
+    width: 100%;
+    margin: 8%;
+    background-color: rgba(5, 7, 128, 0.5);
+    color: white;
+}
+
+#container {
+    background-color: rgba(240, 240, 240, 0.922);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#learn_more {
+    height: 25%;
+    font-size: .8em;
+    color: rgb(128, 128, 128);
+    text-align: left;
+    padding: 5px 20px;
+}
+
+#iframe_container {
+    border: 0px solid white;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    width: 90%;
+    padding-top: 50%;
+    margin: 1.1em;
+}
+
+
+@media screen and (min-width: 600px) {
+    #container_home {
+        background-color: rgba(237, 237, 237, 0.888);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        max-height: 300px;
+        min-height: 230px;
+        margin: 50px 0;
+        width: 100vw;
+    }
+    #container {
+        background-color: white;
+        position: relative;
+    }
+    #learn_more {
+        max-width: 35%;
+        padding: 5px 10%;
+        height: 100%;
+    }
+}
+@media screen and (min-width: 900px) {
+    #container_home {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        max-height: 300px;
+    }
+    #learn_more h4{
+        font-size: 1.5em;
+        margin: 0;
+    }
+    #learn_more p {
+        font-size: 1.1em;
+    }
+    #iframe_container {
+        position: absolute;
+        width: 45%;
+        max-width: 530px;
+        height: 250px;
+        padding-top: 50px;
+        min-height: 200px;
+        right: 5%;
+    }
+    #banner {
+        background-position: 100% 70%;
+        background-size: 100%;
+        height: 275px;
+        margin-top: 90px;
+        margin-bottom: 40px;
+    }
+    .rating_individual {
+        display: inline;
+    }
+}

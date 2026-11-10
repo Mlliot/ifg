@@ -1,0 +1,15 @@
+<!-- @if(isAuth){
+            
+}
+ <button class="loginButton" (click)="login()">Login</button> 
+@if(!isAuth){
+    <button class="loginButton" (click)="login()">Login</button>
+}
+@else {
+    <a id="routerLink" routerLink="/user">Go to User Profile</a>
+    <button class="loginButton" (click)="logout()">Logout</button>
+} -->
+
+<button class="loginButton" routerLink="login">Login</button>
+<button class="loginButton" (click)="logout()">Logout</button>
+<a id="routerLink" routerLink="/user">Go to User Profile</a>

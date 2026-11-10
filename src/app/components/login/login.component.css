@@ -1,0 +1,30 @@
+.loginButton {
+    background-color: white;
+    border: 0 solid white;
+}
+
+#routerLink:hover, .loginButton:hover{
+    color: rgb(72, 100, 224);
+    transition: .3s;
+    /* background-color: blue; */
+}
+#routerLink, .loginButton{
+    /* height: 100px;
+    width: 100px; */
+    /* background-color: lightblue; */
+    padding: 5px;
+    margin: 0px 10px;
+    text-decoration: none;
+    color: black;
+    transition: .3s;
+    font-size: 1em;
+    /* box-shadow: 0 1px 0 rgba(59, 59, 59, 0.384); */
+    /* border-radius: 10px; */
+    /* margin: 10%; */
+}
+
+@media screen and (max-width: 600px){
+    #routerLink{
+        display: none;
+    }
+}

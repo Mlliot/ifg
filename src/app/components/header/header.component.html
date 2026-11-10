@@ -1,0 +1,27 @@
+<header>
+    <div id="header_wrap">
+        <nav>
+            <button type="button" id="nav_button" (click)="toggleNav()">≡</button>
+        </nav>
+        <div id="logo_wrap"><img routerLink="/" id="logo" src="images/IFGlogo.png" alt="logo"></div>
+        <app-login/>
+        <a id="quote" (click)="quote()">Get a Quote</a>
+    </div>
+</header>
+<div id="pop_nav" style="display: none;">
+    <div id="pop_nav_list">
+        @if(isAuth){<a class = "link3" (click)="toggleNav()" routerLink="user">User Page</a>}
+        <a class = "link3" (click)="toggleNav()" routerLink="learn_more">About IFG</a>
+        <a class = "link3" (click)="toggleNav()"routerLink="claims">Claims</a>
+        <a class = "link3" (click)="toggleNav()" routerLink="*">Joining IFG</a>
+        <a class = "link3" (click)="toggleNav()" routerLink="*">For Producers</a>
+        <a class = "link3" (click)="toggleNav()"routerLink="business">For Business</a>
+        <a class = "link3" (click)="toggleNav()" routerLink="*">IFG Ventures</a>
+        <a class = "link3" (click)="toggleNav()"routerLink="contactUs">Contact Us</a>
+    </div>
+</div>
+<div id="header">
+
+</div>
+<app-quote [isOn]=isQuote></app-quote>
+

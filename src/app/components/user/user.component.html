@@ -1,0 +1,43 @@
+@if(true){
+<div id="userContainer" style="background-image: url('./images/building.jpg');">
+    <div id="profile">
+        <h1>Profile Overview</h1>
+        <app-history-card id="accountHistory" [user]="user.userSince"/>
+        <app-payment-card  id="nextPayment" [user]="user.nextPayment"/>
+        <app-file-card id="newClaim"/>
+        <!-- <div id="accountHistory">
+            Account History:
+            <p>User since: {{user.userSince}}</p>
+        </div>
+        <div id="nextPayment">
+            Next payment:
+            <p>{{user.nextPayment}}</p>
+        </div>
+        <div id="newClaim">
+            <p>Need to file another claim? Please visit <a routerLink="claims">claims</a>.</p>
+        </div> -->
+    </div>
+    <div id="overview">
+        <h1>Claims Overview</h1>
+        <div id="user">
+            <div id="userHero">
+                <img [src]="user.photo" alt="userImage">
+                <p id="username">{{user.name}}</p>
+            </div>
+            <div id="insurance_card">
+                <p>Insurance type: </p>
+                {{user.insuranceType}}
+            </div>
+        </div>
+        <div id="claimsHistory">
+            <h2>Claims History</h2>
+            <div id="claims_history_containter">
+                    <app-claim/>
+            </div>
+        </div>
+    </div>
+</div>
+}
+@else{
+    <h1>Forbidden</h1>
+}
